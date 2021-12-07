@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     var data_y:[Double] = []
     var data_z:[Double] = []
     let db = Firestore.firestore()
+    let dt = Date()
+    let dateFormatter = DateFormatter()
+
     
     @IBOutlet weak var AccX: UILabel!
     @IBOutlet weak var AccY: UILabel!
@@ -29,6 +32,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
         startAccelerometer()
     }
     
@@ -74,7 +78,8 @@ class ViewController: UIViewController {
     }
     
     func setAccFirebase(){
-        db.collection("AccResult").document("Acc_array").setData([
+        print(dateFormatter.string(from: dt))
+        db.collection("AccResult").document(dateFormatter.string(from: dt)).setData([
             "x": data_x,
             "y": data_y,
             "z": data_z
@@ -86,9 +91,5 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    
-
-
 }
 
