@@ -55,13 +55,13 @@
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0p-sQ-DWT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sa-N2-Oyn">
-                                <rect key="frame" x="0.0" y="568" width="374" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSM-wS-Zec">
+                                <rect key="frame" x="0.0" y="578" width="375" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="録音保存"/>
                                 <connections>
-                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2HP-bY-UsB"/>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vxe-NJ-ekg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,7 +72,7 @@
                         <outlet property="AccX" destination="6LS-KC-Fmh" id="CEX-Cl-p7j"/>
                         <outlet property="AccY" destination="ng8-lV-Jz2" id="Pqe-bB-RrX"/>
                         <outlet property="AccZ" destination="jII-cL-UHd" id="RVq-ob-IHl"/>
-                        <outlet property="SaveButton" destination="2Sa-N2-Oyn" id="VHP-mt-Ivt"/>
+                        <outlet property="SaveButton" destination="vSM-wS-Zec" id="gt9-qB-fV1"/>
                         <outlet property="StartButton" destination="SRI-aX-Dx4" id="oZP-5f-SRQ"/>
                         <outlet property="StopButton" destination="eCr-GQ-PiQ" id="p8W-1F-bnG"/>
                     </connections>

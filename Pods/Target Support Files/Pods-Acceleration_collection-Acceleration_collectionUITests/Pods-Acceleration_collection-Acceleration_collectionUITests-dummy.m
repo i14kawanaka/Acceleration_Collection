@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Acceleration_collection_Acceleration_collectionUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Acceleration_collection_Acceleration_collectionUITests
+@end
